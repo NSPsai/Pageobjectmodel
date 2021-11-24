@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">TestINEdgeBrowser</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,096</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">TestINchromeBrowser</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,386</td><td></td><td></td></tr><tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">47,482</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestINEdgeBrowser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">script.TestDemoApplication</td><td><a href="#m0">runInMulitpleBrowser</a></td><td rowspan="1">1637695891423</td><td rowspan="1">1364</td></tr></tbody><tbody id="t1"><tr><th colspan="4">TestINchromeBrowser &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">script.TestDemoApplication</td><td><a href="#m1">closeApplication</a></td><td rowspan="1">1637695900037</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestINchromeBrowser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">script.TestDemoApplication</td><td><a href="#m2">runInMulitpleBrowser</a></td><td rowspan="1">1637695891317</td><td rowspan="1">8720</td></tr></tbody></table><h2>TestINEdgeBrowser</h2><h3 id="m0">script.TestDemoApplication#runInMulitpleBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; id=&quot;login2&quot; data-toggle=&quot;modal&quot; data-target=&quot;#logInModal&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt; is not clickable at point (1120, 37). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;logInModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;logInModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=96.0.1054.29)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NSP&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61132}, msedge: {msedgedriverVersion: 96.0.1054.29 (246a8e9ebf93f..., userDataDir: C:\Users\sibaram\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71b7f1f23cae12077a20e3d3c39f9a0b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pompages.LoginPage.clickLogin(LoginPage.java:39)
+	at script.TestDemoApplication.runInMulitpleBrowser(TestDemoApplication.java:19)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>TestINchromeBrowser</h2><h3 id="m1">script.TestDemoApplication#closeApplication</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=runInMulitpleBrowser status=FAILURE method=TestDemoApplication.runInMulitpleBrowser(java.lang.String)[pri:0, instance:script.TestDemoApplication@6a41eaa2] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NSP&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61132}, msedge: {msedgedriverVersion: 96.0.1054.29 (246a8e9ebf93f..., userDataDir: C:\Users\sibaram\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71b7f1f23cae12077a20e3d3c39f9a0b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at generic.Lib.CaptureScreenshots(Lib.java:53)
+	at generic.BaseTest.closeApplication(BaseTest.java:38)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">script.TestDemoApplication#runInMulitpleBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NSP&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.29, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61132}, msedge: {msedgedriverVersion: 96.0.1054.29 (246a8e9ebf93f..., userDataDir: C:\Users\sibaram\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71b7f1f23cae12077a20e3d3c39f9a0b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at script.TestDemoApplication.runInMulitpleBrowser(TestDemoApplication.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

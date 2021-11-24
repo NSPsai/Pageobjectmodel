@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="TestINEdgeBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="script.TestDemoApplication">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="closeApplication"/>
+          <include name="runInMulitpleBrowser" invocation-numbers="0"/>
+          <include name="openApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.TestDemoApplication -->
+    </classes>
+  </test> <!-- TestINEdgeBrowser(failed) -->
+  <test name="TestINchromeBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.TestDemoApplication">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="closeApplication"/>
+          <include name="runInMulitpleBrowser" invocation-numbers="0"/>
+          <include name="openApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.TestDemoApplication -->
+    </classes>
+  </test> <!-- TestINchromeBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
